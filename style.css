@@ -1,0 +1,119 @@
+* {
+  height: 50vh;
+}
+
+.home {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.flip-container,
+.flip-container1 {
+  perspective: 1000px;
+  /* flex: 0 1 auto; */
+  margin: 1px;
+  height: 200px;
+  width: 200px;
+  /* min-width: calc(50vw - 10px); */
+  /* min-height: calc(50vh - 10px); */
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+  /* transform: ; */
+}
+
+.flip-container1:hover .flipper {
+  transform: rotateX(180deg);
+  /* transform: ; */
+}
+
+/* .flip-container, */
+
+.flipper {
+  transition: 1.5s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.front1,
+.front2,
+.front3,
+.back,
+.back1,
+.back2,
+.back3 {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.front {
+  background-color: brown;
+  background-image: url(https://images11.esquire.ru/upload/img_cache/9b9/9b9739a8b7e17755933e61650ecc0e5a_ce_1219x761x1x0_cropped_960x600.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back {
+  background-color: aqua;
+  transform: rotateY(180deg);
+  background-image: url(https://www.karusel-tv.ru/media/suit/preview_full/media/image/2019/05/1558107489833213_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.front1 {
+  background-color: forestgreen;
+  background-image: url(https://images11.esquire.ru/upload/img_cache/9b9/9b9739a8b7e17755933e61650ecc0e5a_ce_1219x761x1x0_cropped_960x600.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back1 {
+  background-color: fuchsia;
+  transform: rotateX(180deg);
+  background-image: url(https://rtvi.com/upload/iblock/e24/e241c26e7f5b8293400437285c1da14f.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.front2 {
+  background-color: gold;
+  background-image: url(https://images11.esquire.ru/upload/img_cache/9b9/9b9739a8b7e17755933e61650ecc0e5a_ce_1219x761x1x0_cropped_960x600.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back2 {
+  background-color: aquamarine;
+  transform: rotateY(180deg);
+  background-image: url(https://static1.iod.media/storage/articles/covers/xl/1597223031_7156_503af93f7e7a2b64.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.front3 {
+  background-color: gray;
+  background-image: url(https://images11.esquire.ru/upload/img_cache/9b9/9b9739a8b7e17755933e61650ecc0e5a_ce_1219x761x1x0_cropped_960x600.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back3 {
+  background-color: ghostwhite;
+  background-image: url(http://nickjr-intl.mtvnimages.com/uri/mgid:arc:content:nickelodeon.ru:cecf82d2-9894-43e9-8b0e-aa865920e0a9?stage=live&ep=nickelodeon.ru);
+  transform: rotateY(180deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
